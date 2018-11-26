@@ -2,8 +2,8 @@
 	"name": "deadlock-integrations",
 	"version": "0.0.1",
 	"title": "Deadlock-Mod Integrations",
-	"author": "Deadlock989, shanemadden",
-    "homepage": "https://forums.factorio.com/viewtopic.php?f=94&t=57264",
+	"author": "Deadlock989, Shane Madden",
+	"homepage": "https://forums.factorio.com/viewtopic.php?f=94&t=57264",
 	"dependencies": [
 		"base >= 0.16.51",
 		"deadlock-beltboxes-loaders",
