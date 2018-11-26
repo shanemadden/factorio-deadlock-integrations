@@ -1,0 +1,17 @@
+{
+	"name": "deadlock-integrations",
+	"version": "0.0.1",
+	"title": "Deadlock-Mod Integrations",
+	"author": "Deadlock989, shanemadden",
+    "homepage": "https://forums.factorio.com/viewtopic.php?f=94&t=57264",
+	"dependencies": [
+		"base >= 0.16.51",
+		"deadlock-beltboxes-loaders",
+		"?boblogistics >= 0.16.22",
+		"?FactorioExtended-Transport",
+		"?FactorioExtended-Plus-Transport",
+		"?xander-mod"
+	],
+	"description": "Adds support in Deadlock's Stacking Beltboxes & Compact Loaders for Bob's mods, FactorioExtended (as well as Plus), and Xander's mods.",
+	"factorio_version": "0.16"
+}
