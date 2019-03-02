@@ -1,0 +1,5 @@
+---------------------------------------------------------------------------------------------------
+Version: 2.0.0
+Date: 02. 03. 2019
+  Changes:
+    - Initial release - includes third-party mod integration that was previously included directly in DSB/DCL
