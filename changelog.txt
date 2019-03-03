@@ -1,4 +1,9 @@
 ---------------------------------------------------------------------------------------------------
+Version: 2.0.1
+Date: 03. 03. 2019
+  Changes:
+    - Dynamically set loader recipes to match Bob's mods and update speeds to match the state of Bob's belt speed overhaul setting.
+---------------------------------------------------------------------------------------------------
 Version: 2.0.0
 Date: 02. 03. 2019
   Changes:
