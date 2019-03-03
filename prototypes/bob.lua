@@ -18,6 +18,7 @@ if data.raw["transport-belt"]["basic-transport-belt"] then
 			{"wood",4}
 		},
 	})
+	data.raw.technology["basic-transport-belt-beltbox"].localised_name = nil
 end
 
 local t4_loader_ingredients = {
