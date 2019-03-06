@@ -32,6 +32,12 @@ if data.raw.technology["deadlock-stacking-4"] then
 		table.insert(data.raw.technology["deadlock-stacking-4"].prerequisites, "deadlock-stacking-3")
 	end
 end
+if data.raw.furnace["rapid-transport-belt-mk1-beltbox"] then
+	data.raw.furnace["express-transport-belt-beltbox"].next_upgrade = "rapid-transport-belt-mk1-beltbox"
+end
+if data.raw.loader["rapid-transport-belt-mk1-loader"] then
+	data.raw.loader["express-transport-belt-loader"].next_upgrade = "rapid-transport-belt-mk1-loader"
+end
 
 deadlock.add_tier({
 	transport_belt      = "rapid-transport-belt-mk2",
@@ -65,4 +71,10 @@ if data.raw.technology["deadlock-stacking-5"] then
 	if not found then
 		table.insert(data.raw.technology["deadlock-stacking-5"].prerequisites, "deadlock-stacking-4")
 	end
+end
+if data.raw.furnace["rapid-transport-belt-mk2-beltbox"] then
+	data.raw.furnace["rapid-transport-belt-mk1-beltbox"].next_upgrade = "rapid-transport-belt-mk2-beltbox"
+end
+if data.raw.loader["rapid-transport-belt-mk2-loader"] then
+	data.raw.loader["rapid-transport-belt-mk1-loader"].next_upgrade = "rapid-transport-belt-mk2-loader"
 end

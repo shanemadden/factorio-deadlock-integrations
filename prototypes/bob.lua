@@ -19,8 +19,12 @@ if data.raw["transport-belt"]["basic-transport-belt"] then
 		},
 	})
 	if data.raw.technology["basic-transport-belt-beltbox"] then
+		data.raw.furnace["basic-transport-belt-beltbox"].next_upgrade = "transport-belt-beltbox"
 		data.raw.technology["basic-transport-belt-beltbox"].localised_name = nil
 		table.insert(data.raw.technology["deadlock-stacking-1"].prerequisites, "basic-transport-belt-beltbox")
+	end
+	if data.raw.loader["basic-transport-belt-loader"] then
+		data.raw.loader["basic-transport-belt-loader"].next_upgrade = "transport-belt-loader"
 	end
 end
 
@@ -69,7 +73,12 @@ if data.raw.technology["deadlock-stacking-4"] then
 		table.insert(data.raw.technology["deadlock-stacking-4"].prerequisites, "deadlock-stacking-3")
 	end
 end
-
+if data.raw.furnace["turbo-transport-belt-beltbox"] then
+	data.raw.furnace["express-transport-belt-beltbox"].next_upgrade = "turbo-transport-belt-beltbox"
+end
+if data.raw.loader["turbo-transport-belt-loader"] then
+	data.raw.loader["express-transport-belt-loader"].next_upgrade = "turbo-transport-belt-loader"
+end
 
 local t5_loader_ingredients = {
 	{"turbo-transport-belt-loader",1}
@@ -114,6 +123,12 @@ if data.raw.technology["deadlock-stacking-5"] then
 	if not found then
 		table.insert(data.raw.technology["deadlock-stacking-5"].prerequisites, "deadlock-stacking-4")
 	end
+end
+if data.raw.furnace["ultimate-transport-belt-beltbox"] then
+	data.raw.furnace["turbo-transport-belt-beltbox"].next_upgrade = "ultimate-transport-belt-beltbox"
+end
+if data.raw.loader["ultimate-transport-belt-loader"] then
+	data.raw.loader["turbo-transport-belt-loader"].next_upgrade = "ultimate-transport-belt-loader"
 end
 
 -- update existing recipes to match
@@ -171,7 +186,7 @@ if settings.startup["bobmods-logistics-beltoverhaul"].value then
 		if data.raw.loader["basic-transport-belt-loader"] then
 			data.raw.loader["basic-transport-belt-loader"].speed = bobmods.logistics.belt_speed(1)
 		end
-		if data.raw.technology["basic-transport-belt-beltbox"] then
+		if data.raw.furnace["basic-transport-belt-beltbox"] then
 			data.raw.furnace["basic-transport-belt-beltbox"].crafting_speed = bobmods.logistics.belt_speed(1) * 18
 		end
 		-- t1
