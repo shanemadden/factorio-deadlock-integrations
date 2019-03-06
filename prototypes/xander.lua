@@ -17,6 +17,9 @@ deadlock.add_tier({
 		{"bronze-plate",4},
 	},
 })
+if data.raw.technology["slow-transport-belt-beltbox"] then
+	table.insert(data.raw.technology["deadlock-stacking-1"].prerequisites, "slow-transport-belt-beltbox")
+end
 
 deadlock.add_tier({
 	transport_belt      = "expedited-transport-belt",

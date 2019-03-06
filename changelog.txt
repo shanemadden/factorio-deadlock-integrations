@@ -1,4 +1,11 @@
 ---------------------------------------------------------------------------------------------------
+Version: 2.0.2
+Date: 03. 05. 2019
+  Changes:
+    - Add dependencies between tech levels
+  Bugfixes:
+    - Fixed speed changes for Bob's belts with either loaders or beltboxes disabled
+---------------------------------------------------------------------------------------------------
 Version: 2.0.1
 Date: 03. 03. 2019
   Changes:
