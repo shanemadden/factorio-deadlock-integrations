@@ -1,11 +1,16 @@
 ---------------------------------------------------------------------------------------------------
+Version: 2.0.4
+Date: 09. 03. 2019
+  Changes:
+    - Add integration with DoubleSpeedBelts
+---------------------------------------------------------------------------------------------------
 Version: 2.0.3
-Date: 03. 05. 2019
+Date: 05. 03. 2019
   Changes:
     - Add upgrade dependencies between beltboxes and loaders for base upgrade planner
 ---------------------------------------------------------------------------------------------------
 Version: 2.0.2
-Date: 03. 05. 2019
+Date: 05. 03. 2019
   Changes:
     - Add dependencies between tech levels
   Bugfixes:
