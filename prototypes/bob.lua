@@ -133,52 +133,58 @@ end
 
 -- update existing recipes to match
 if settings.startup["bobmods-logistics-beltoverhaul"].value then
-	local t1_loader_ingredients = {}
-	if data.raw["transport-belt"]["basic-transport-belt"] then
-		table.insert(t1_loader_ingredients, {"basic-transport-belt-loader",1})
-	else
-		table.insert(t1_loader_ingredients, {"transport-belt",1})
+	if data.raw.loader["transport-belt-loader"] then
+		local t1_loader_ingredients = {}
+		if data.raw["transport-belt"]["basic-transport-belt"] then
+			table.insert(t1_loader_ingredients, {"basic-transport-belt-loader",1})
+		else
+			table.insert(t1_loader_ingredients, {"transport-belt",1})
+		end
+		table.insert(t1_loader_ingredients, {"iron-gear-wheel",10})
+		if data.raw.item["tin-plate"] then
+			table.insert(t1_loader_ingredients, {"tin-plate",7})
+		else
+			table.insert(t1_loader_ingredients, {"iron-plate",7})
+		end
+		data.raw.recipe["transport-belt-loader"].ingredients = t1_loader_ingredients
 	end
-	table.insert(t1_loader_ingredients, {"iron-gear-wheel",10})
-	if data.raw.item["tin-plate"] then
-		table.insert(t1_loader_ingredients, {"tin-plate",7})
-	else
-		table.insert(t1_loader_ingredients, {"iron-plate",7})
-	end
-	data.raw.recipe["transport-belt-loader"].ingredients = t1_loader_ingredients
 
-	local t2_loader_ingredients = {
-		{"transport-belt-loader",1}
-	}
-	if data.raw.item["bronze-alloy"] then
-		table.insert(t2_loader_ingredients, {"bronze-alloy",7})
-	else
-		table.insert(t2_loader_ingredients, {"steel-plate",7})
+	if data.raw.recipe["fast-transport-belt-loader"] then
+		local t2_loader_ingredients = {
+			{"transport-belt-loader",1}
+		}
+		if data.raw.item["bronze-alloy"] then
+			table.insert(t2_loader_ingredients, {"bronze-alloy",7})
+		else
+			table.insert(t2_loader_ingredients, {"steel-plate",7})
+		end
+		if data.raw.item["steel-gear-wheel"] then
+			table.insert(t2_loader_ingredients, {"steel-gear-wheel",10})
+		else
+			table.insert(t2_loader_ingredients, {"iron-gear-wheel",10})
+		end
+		data.raw.recipe["fast-transport-belt-loader"].ingredients = t2_loader_ingredients
 	end
-	if data.raw.item["steel-gear-wheel"] then
-		table.insert(t2_loader_ingredients, {"steel-gear-wheel",10})
-	else
-		table.insert(t2_loader_ingredients, {"iron-gear-wheel",10})
-	end
-	data.raw.recipe["fast-transport-belt-loader"].ingredients = t2_loader_ingredients
 
-	local t3_loader_ingredients = {
-		{"fast-transport-belt-loader",1}
-	}
-	if data.raw.item["aluminium-plate"] then
-		table.insert(t3_loader_ingredients, {"aluminium-plate",7})
-	else
-		table.insert(t3_loader_ingredients, {"steel-plate",7})
+	if data.raw.recipe["express-transport-belt-loader"] then
+		local t3_loader_ingredients = {
+			{"fast-transport-belt-loader",1}
+		}
+		if data.raw.item["aluminium-plate"] then
+			table.insert(t3_loader_ingredients, {"aluminium-plate",7})
+		else
+			table.insert(t3_loader_ingredients, {"steel-plate",7})
+		end
+		if data.raw.item["cobalt-steel-gear-wheel"] then
+			table.insert(t3_loader_ingredients, {"cobalt-steel-gear-wheel",10})
+		else
+			table.insert(t3_loader_ingredients, {"iron-gear-wheel",10})
+		end
+		if data.raw.item["cobalt-steel-bearing"] then
+			table.insert(t3_loader_ingredients, {amount = 10,name = "cobalt-steel-bearing"})
+		end
+		data.raw.recipe["express-transport-belt-loader"].ingredients = t3_loader_ingredients
 	end
-	if data.raw.item["cobalt-steel-gear-wheel"] then
-		table.insert(t3_loader_ingredients, {"cobalt-steel-gear-wheel",10})
-	else
-		table.insert(t3_loader_ingredients, {"iron-gear-wheel",10})
-	end
-	if data.raw.item["cobalt-steel-bearing"] then
-		table.insert(t3_loader_ingredients, {amount = 10,name = "cobalt-steel-bearing"})
-	end
-	data.raw.recipe["express-transport-belt-loader"].ingredients = t3_loader_ingredients
 
 	-- Update speeds if overhauled
 	if settings.startup["bobmods-logistics-beltoverhaulspeed"].value then
