@@ -232,3 +232,16 @@ if settings.startup["bobmods-logistics-beltoverhaul"].value then
 		end
 	end
 end
+-- sync fuel multiplers for fuels that bobplates might have changed
+if data.raw.item["deadlock-stack-coal"] then
+    data.raw.item["deadlock-stack-coal"].fuel_emissions_multiplier = data.raw.item["coal"].fuel_emissions_multiplier
+end
+if data.raw.item["deadlock-stack-solid-fuel"] then
+    data.raw.item["deadlock-stack-solid-fuel"].fuel_emissions_multiplier = data.raw.item["solid-fuel"].fuel_emissions_multiplier
+end
+if data.raw.item["deadlock-stack-rocket-fuel"] then
+    data.raw.item["deadlock-stack-rocket-fuel"].fuel_emissions_multiplier = data.raw.item["rocket-fuel"].fuel_emissions_multiplier
+end
+if data.raw.item["deadlock-stack-nuclear-fuel"] then
+    data.raw.item["deadlock-stack-nuclear-fuel"].fuel_emissions_multiplier = data.raw.item["nuclear-fuel"].fuel_emissions_multiplier
+end
