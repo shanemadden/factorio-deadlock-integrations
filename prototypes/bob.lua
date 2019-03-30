@@ -5,7 +5,7 @@ if data.raw["transport-belt"]["basic-transport-belt"] then
 		colour              = {r=165, g=165, b=165},
 		underground_belt    = "basic-underground-belt",
 		splitter            = "basic-splitter",
-		technology          = "bob-logistics-0",
+		technology          = "logistics-0",
 		order               = "0",
 		loader_ingredients  = {
 			{"basic-transport-belt",1},
@@ -50,7 +50,7 @@ deadlock.add_tier({
 	colour              = {r=165,g=10,b=225},
 	underground_belt    = "turbo-underground-belt",
 	splitter            = "turbo-splitter",
-	technology          = "bob-logistics-4",
+	technology          = "logistics-4",
 	order               = "d",
 	loader_ingredients  = t4_loader_ingredients,
 	beltbox_ingredients = {
@@ -101,7 +101,7 @@ deadlock.add_tier({
 	colour              = {r=10,g=225,b=25},
 	underground_belt    = "ultimate-underground-belt",
 	splitter            = "ultimate-splitter",
-	technology          = "bob-logistics-5",
+	technology          = "logistics-5",
 	order               = "e",
 	loader_ingredients  = t5_loader_ingredients,
 	beltbox_ingredients = {
