@@ -1,4 +1,9 @@
 ---------------------------------------------------------------------------------------------------
+Version: 2.0.10
+Date: 13. 04. 2019
+  Changes:
+    - Added an option for overhauled Bob's recipes courtesy of Recon777 and Pawz, currently activated by a disabled-by-default startup setting
+---------------------------------------------------------------------------------------------------
 Version: 2.0.9
 Date: 06. 04. 2019
   Changes:

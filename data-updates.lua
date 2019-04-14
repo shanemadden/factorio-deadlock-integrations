@@ -2,7 +2,11 @@ if mods["xander-mod"] then
 	require("prototypes.xander")
 end
 if mods["boblogistics"] then
-	require("prototypes.bob")
+	if settings.startup["deadlock-integrations-new-bob-recipes"].value then
+		require("prototypes.bob-new")
+	else
+		require("prototypes.bob")
+	end
 end
 if mods["FactorioExtended-Plus-Transport"] then
 	require("prototypes.fextendedplus")
