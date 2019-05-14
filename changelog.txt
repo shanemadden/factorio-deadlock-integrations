@@ -1,4 +1,11 @@
 ---------------------------------------------------------------------------------------------------
+Version: 2.0.11
+Date: 13. 05. 2019
+  Changes:
+    - Update for new belt speed ratios in base mod
+    - Support Ultimate Belts for Double Speed Belts integration
+    - Fix checksum issues caused by split file for different Bob's recipe settings
+---------------------------------------------------------------------------------------------------
 Version: 2.0.10
 Date: 13. 04. 2019
   Changes:
