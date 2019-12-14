@@ -1,4 +1,9 @@
 ---------------------------------------------------------------------------------------------------
+Version: 2.0.12
+Date: 14. 12. 2019
+  Changes:
+    - Fix recipes for turbo inserter no longer existing if Bob's inserter overhaul option is disabled
+---------------------------------------------------------------------------------------------------
 Version: 2.0.11
 Date: 13. 05. 2019
   Changes:

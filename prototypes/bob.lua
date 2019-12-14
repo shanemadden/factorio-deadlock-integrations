@@ -30,6 +30,10 @@ if settings.startup["deadlock-integrations-new-bob-recipes"].value then
 		end
 	end
 
+	local inserter = "fast-inserter"
+	if data.raw.item["turbo-inserter"] then
+		inserter = "turbo-inserter"
+	end
 	deadlock.add_tier({
 		transport_belt      = "turbo-transport-belt",
 		colour              = {r=165,g=10,b=225},
@@ -39,13 +43,13 @@ if settings.startup["deadlock-integrations-new-bob-recipes"].value then
 		order               = "d",
 		loader_ingredients  = {
 			{"express-transport-belt-loader",1},
-			{"turbo-inserter",4},
+			{inserter,4},
 			{"turbo-splitter",2},
 			{"steel-plate",10}
 		},
 		beltbox_ingredients = {
 			{"express-transport-belt-beltbox",1},
-			{"turbo-inserter",10},
+			{inserter,10},
 			{"turbo-splitter",3},
 			{"steel-plate",10}
 		},
