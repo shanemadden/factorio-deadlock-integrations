@@ -25,8 +25,8 @@ if settings.startup["deadlock-integrations-new-bob-recipes"].value then
 			data.raw.technology["basic-transport-belt-beltbox"].localised_name = nil
 			table.insert(data.raw.technology["deadlock-stacking-1"].prerequisites, "basic-transport-belt-beltbox")
 		end
-		if data.raw.loader["basic-transport-belt-loader"] then
-			data.raw.loader["basic-transport-belt-loader"].next_upgrade = "transport-belt-loader"
+		if data.raw["loader-1x1"]["basic-transport-belt-loader"] then
+			data.raw["loader-1x1"]["basic-transport-belt-loader"].next_upgrade = "transport-belt-loader"
 		end
 	end
 
@@ -71,8 +71,8 @@ if settings.startup["deadlock-integrations-new-bob-recipes"].value then
 	if data.raw.furnace["turbo-transport-belt-beltbox"] then
 		data.raw.furnace["express-transport-belt-beltbox"].next_upgrade = "turbo-transport-belt-beltbox"
 	end
-	if data.raw.loader["turbo-transport-belt-loader"] then
-		data.raw.loader["express-transport-belt-loader"].next_upgrade = "turbo-transport-belt-loader"
+	if data.raw["loader-1x1"]["turbo-transport-belt-loader"] then
+		data.raw["loader-1x1"]["express-transport-belt-loader"].next_upgrade = "turbo-transport-belt-loader"
 	end
 
 	deadlock.add_tier({
@@ -112,8 +112,8 @@ if settings.startup["deadlock-integrations-new-bob-recipes"].value then
 	if data.raw.furnace["ultimate-transport-belt-beltbox"] then
 		data.raw.furnace["turbo-transport-belt-beltbox"].next_upgrade = "ultimate-transport-belt-beltbox"
 	end
-	if data.raw.loader["ultimate-transport-belt-loader"] then
-		data.raw.loader["turbo-transport-belt-loader"].next_upgrade = "ultimate-transport-belt-loader"
+	if data.raw["loader-1x1"]["ultimate-transport-belt-loader"] then
+		data.raw["loader-1x1"]["turbo-transport-belt-loader"].next_upgrade = "ultimate-transport-belt-loader"
 	end
 
 	-- update existing recipes to match
@@ -176,43 +176,43 @@ if settings.startup["deadlock-integrations-new-bob-recipes"].value then
 		-- Update speeds if overhauled
 		if settings.startup["bobmods-logistics-beltoverhaulspeed"].value then
 			-- t0
-			if data.raw.loader["basic-transport-belt-loader"] then
-				data.raw.loader["basic-transport-belt-loader"].speed = bobmods.logistics.belt_speed(1)
+			if data.raw["loader-1x1"]["basic-transport-belt-loader"] then
+				data.raw["loader-1x1"]["basic-transport-belt-loader"].speed = bobmods.logistics.belt_speed(1)
 			end
 			if data.raw.furnace["basic-transport-belt-beltbox"] then
 				data.raw.furnace["basic-transport-belt-beltbox"].crafting_speed = bobmods.logistics.belt_speed(1) * 32
 			end
 			-- t1
-			if data.raw.loader["transport-belt-loader"] then
-				data.raw.loader["transport-belt-loader"].speed = bobmods.logistics.belt_speed(2)
+			if data.raw["loader-1x1"]["transport-belt-loader"] then
+				data.raw["loader-1x1"]["transport-belt-loader"].speed = bobmods.logistics.belt_speed(2)
 			end
 			if data.raw.furnace["transport-belt-beltbox"] then
 				data.raw.furnace["transport-belt-beltbox"].crafting_speed = bobmods.logistics.belt_speed(2) * 32
 			end
 			-- t2
-			if data.raw.loader["fast-transport-belt-loader"] then
-				data.raw.loader["fast-transport-belt-loader"].speed = bobmods.logistics.belt_speed(3)
+			if data.raw["loader-1x1"]["fast-transport-belt-loader"] then
+				data.raw["loader-1x1"]["fast-transport-belt-loader"].speed = bobmods.logistics.belt_speed(3)
 			end
 			if data.raw.furnace["fast-transport-belt-beltbox"] then
 				data.raw.furnace["fast-transport-belt-beltbox"].crafting_speed = bobmods.logistics.belt_speed(3) * 32
 			end
 			-- t3
-			if data.raw.loader["express-transport-belt-loader"] then
-				data.raw.loader["express-transport-belt-loader"].speed = bobmods.logistics.belt_speed(4)
+			if data.raw["loader-1x1"]["express-transport-belt-loader"] then
+				data.raw["loader-1x1"]["express-transport-belt-loader"].speed = bobmods.logistics.belt_speed(4)
 			end
 			if data.raw.furnace["express-transport-belt-beltbox"] then
 				data.raw.furnace["express-transport-belt-beltbox"].crafting_speed = bobmods.logistics.belt_speed(4) * 32
 			end
 			-- t4
-			if data.raw.loader["turbo-transport-belt-loader"] then
-				data.raw.loader["turbo-transport-belt-loader"].speed = bobmods.logistics.belt_speed(5)
+			if data.raw["loader-1x1"]["turbo-transport-belt-loader"] then
+				data.raw["loader-1x1"]["turbo-transport-belt-loader"].speed = bobmods.logistics.belt_speed(5)
 			end
 			if data.raw.furnace["turbo-transport-belt-beltbox"] then
 				data.raw.furnace["turbo-transport-belt-beltbox"].crafting_speed = bobmods.logistics.belt_speed(5) * 32
 			end
 			-- t5
-			if data.raw.loader["ultimate-transport-belt-loader"] then
-				data.raw.loader["ultimate-transport-belt-loader"].speed = bobmods.logistics.belt_speed(6)
+			if data.raw["loader-1x1"]["ultimate-transport-belt-loader"] then
+				data.raw["loader-1x1"]["ultimate-transport-belt-loader"].speed = bobmods.logistics.belt_speed(6)
 			end
 			if data.raw.furnace["ultimate-transport-belt-beltbox"] then
 				data.raw.furnace["ultimate-transport-belt-beltbox"].crafting_speed = bobmods.logistics.belt_speed(6) * 32
@@ -245,8 +245,8 @@ else
 			data.raw.technology["basic-transport-belt-beltbox"].localised_name = nil
 			table.insert(data.raw.technology["deadlock-stacking-1"].prerequisites, "basic-transport-belt-beltbox")
 		end
-		if data.raw.loader["basic-transport-belt-loader"] then
-			data.raw.loader["basic-transport-belt-loader"].next_upgrade = "transport-belt-loader"
+		if data.raw["loader-1x1"]["basic-transport-belt-loader"] then
+			data.raw["loader-1x1"]["basic-transport-belt-loader"].next_upgrade = "transport-belt-loader"
 		end
 	end
 
@@ -298,8 +298,8 @@ else
 	if data.raw.furnace["turbo-transport-belt-beltbox"] then
 		data.raw.furnace["express-transport-belt-beltbox"].next_upgrade = "turbo-transport-belt-beltbox"
 	end
-	if data.raw.loader["turbo-transport-belt-loader"] then
-		data.raw.loader["express-transport-belt-loader"].next_upgrade = "turbo-transport-belt-loader"
+	if data.raw["loader-1x1"]["turbo-transport-belt-loader"] then
+		data.raw["loader-1x1"]["express-transport-belt-loader"].next_upgrade = "turbo-transport-belt-loader"
 	end
 
 	local t5_loader_ingredients = {
@@ -349,13 +349,13 @@ else
 	if data.raw.furnace["ultimate-transport-belt-beltbox"] then
 		data.raw.furnace["turbo-transport-belt-beltbox"].next_upgrade = "ultimate-transport-belt-beltbox"
 	end
-	if data.raw.loader["ultimate-transport-belt-loader"] then
-		data.raw.loader["turbo-transport-belt-loader"].next_upgrade = "ultimate-transport-belt-loader"
+	if data.raw["loader-1x1"]["ultimate-transport-belt-loader"] then
+		data.raw["loader-1x1"]["turbo-transport-belt-loader"].next_upgrade = "ultimate-transport-belt-loader"
 	end
 
 	-- update existing recipes to match
 	if settings.startup["bobmods-logistics-beltoverhaul"].value then
-		if data.raw.loader["transport-belt-loader"] then
+		if data.raw["loader-1x1"]["transport-belt-loader"] then
 			local t1_loader_ingredients = {}
 			if data.raw["transport-belt"]["basic-transport-belt"] then
 				table.insert(t1_loader_ingredients, {"basic-transport-belt-loader",1})
@@ -412,43 +412,43 @@ else
 		-- Update speeds if overhauled
 		if settings.startup["bobmods-logistics-beltoverhaulspeed"].value then
 			-- t0
-			if data.raw.loader["basic-transport-belt-loader"] then
-				data.raw.loader["basic-transport-belt-loader"].speed = bobmods.logistics.belt_speed(1)
+			if data.raw["loader-1x1"]["basic-transport-belt-loader"] then
+				data.raw["loader-1x1"]["basic-transport-belt-loader"].speed = bobmods.logistics.belt_speed(1)
 			end
 			if data.raw.furnace["basic-transport-belt-beltbox"] then
 				data.raw.furnace["basic-transport-belt-beltbox"].crafting_speed = bobmods.logistics.belt_speed(1) * 32
 			end
 			-- t1
-			if data.raw.loader["transport-belt-loader"] then
-				data.raw.loader["transport-belt-loader"].speed = bobmods.logistics.belt_speed(2)
+			if data.raw["loader-1x1"]["transport-belt-loader"] then
+				data.raw["loader-1x1"]["transport-belt-loader"].speed = bobmods.logistics.belt_speed(2)
 			end
 			if data.raw.furnace["transport-belt-beltbox"] then
 				data.raw.furnace["transport-belt-beltbox"].crafting_speed = bobmods.logistics.belt_speed(2) * 32
 			end
 			-- t2
-			if data.raw.loader["fast-transport-belt-loader"] then
-				data.raw.loader["fast-transport-belt-loader"].speed = bobmods.logistics.belt_speed(3)
+			if data.raw["loader-1x1"]["fast-transport-belt-loader"] then
+				data.raw["loader-1x1"]["fast-transport-belt-loader"].speed = bobmods.logistics.belt_speed(3)
 			end
 			if data.raw.furnace["fast-transport-belt-beltbox"] then
 				data.raw.furnace["fast-transport-belt-beltbox"].crafting_speed = bobmods.logistics.belt_speed(3) * 32
 			end
 			-- t3
-			if data.raw.loader["express-transport-belt-loader"] then
-				data.raw.loader["express-transport-belt-loader"].speed = bobmods.logistics.belt_speed(4)
+			if data.raw["loader-1x1"]["express-transport-belt-loader"] then
+				data.raw["loader-1x1"]["express-transport-belt-loader"].speed = bobmods.logistics.belt_speed(4)
 			end
 			if data.raw.furnace["express-transport-belt-beltbox"] then
 				data.raw.furnace["express-transport-belt-beltbox"].crafting_speed = bobmods.logistics.belt_speed(4) * 32
 			end
 			-- t4
-			if data.raw.loader["turbo-transport-belt-loader"] then
-				data.raw.loader["turbo-transport-belt-loader"].speed = bobmods.logistics.belt_speed(5)
+			if data.raw["loader-1x1"]["turbo-transport-belt-loader"] then
+				data.raw["loader-1x1"]["turbo-transport-belt-loader"].speed = bobmods.logistics.belt_speed(5)
 			end
 			if data.raw.furnace["turbo-transport-belt-beltbox"] then
 				data.raw.furnace["turbo-transport-belt-beltbox"].crafting_speed = bobmods.logistics.belt_speed(5) * 32
 			end
 			-- t5
-			if data.raw.loader["ultimate-transport-belt-loader"] then
-				data.raw.loader["ultimate-transport-belt-loader"].speed = bobmods.logistics.belt_speed(6)
+			if data.raw["loader-1x1"]["ultimate-transport-belt-loader"] then
+				data.raw["loader-1x1"]["ultimate-transport-belt-loader"].speed = bobmods.logistics.belt_speed(6)
 			end
 			if data.raw.furnace["ultimate-transport-belt-beltbox"] then
 				data.raw.furnace["ultimate-transport-belt-beltbox"].crafting_speed = bobmods.logistics.belt_speed(6) * 32

@@ -35,8 +35,8 @@ end
 if data.raw.furnace["blistering-transport-belt-beltbox"] then
 	data.raw.furnace["express-transport-belt-beltbox"].next_upgrade = "blistering-transport-belt-beltbox"
 end
-if data.raw.loader["blistering-transport-belt-loader"] then
-	data.raw.loader["express-transport-belt-loader"].next_upgrade = "blistering-transport-belt-loader"
+if data.raw["loader-1x1"]["blistering-transport-belt-loader"] then
+	data.raw["loader-1x1"]["express-transport-belt-loader"].next_upgrade = "blistering-transport-belt-loader"
 end
 
 deadlock.add_tier({
@@ -75,6 +75,6 @@ end
 if data.raw.furnace["furious-transport-belt-beltbox"] then
 	data.raw.furnace["blistering-transport-belt-beltbox"].next_upgrade = "furious-transport-belt-beltbox"
 end
-if data.raw.loader["furious-transport-belt-loader"] then
-	data.raw.loader["blistering-transport-belt-loader"].next_upgrade = "furious-transport-belt-loader"
+if data.raw["loader-1x1"]["furious-transport-belt-loader"] then
+	data.raw["loader-1x1"]["blistering-transport-belt-loader"].next_upgrade = "furious-transport-belt-loader"
 end
