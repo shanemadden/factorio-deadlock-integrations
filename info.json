@@ -1,6 +1,6 @@
 {
 	"name": "deadlock-integrations",
-	"version": "2.1.2",
+	"version": "2.2.0",
 	"title": "Deadlock-Mod Integrations",
 	"author": "Deadlock989, Shane Madden",
 	"homepage": "https://forums.factorio.com/viewtopic.php?f=94&t=57264",
@@ -10,7 +10,7 @@
 		"?boblogistics >= 0.17.0",
 		"?bobplates",
 		"?DoubleSpeedBelts",
-		"?FactorioExtended-Transport",
+		"?FactorioExtended-Transport >= 5.201.0",
 		"?FactorioExtended-Plus-Transport",
 		"?SchallBeltConfiguration",
 		"?xander-mod"
